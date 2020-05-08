@@ -1,0 +1,82 @@
+p {
+    font-weight: 900;
+    font-size: 22px;
+    text-align: center;
+    color: #00FF00;
+}
+
+.container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border: 5px solid red;
+}
+
+.image {
+    opacity: 1;
+    display: block;
+    width: 250px;
+    height: 250px;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    object-fit: none;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.container:hover .image {
+    opacity: 0.3;
+}
+
+.container:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+.a1{
+    text-decoration: none;
+}
+
+.h1 {
+    text-align: center;
+    color: blue;
+    text-decoration: underline;
+    text-decoration: bold;
+    line-height: 1.8;
+}
+
+body {
+    background-image: url("https://cdn.wallpapersafari.com/19/17/uEdN2l.gif");
+    background-size: cover;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.one,
+.two,
+.three {
+    width: 250px;
+    /* border: 3px solid black; */
+    height: 250px;
+}
+
